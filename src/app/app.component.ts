@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import * as jQuery from 'jquery';
+import 'hammerjs';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'U-Smile';
+  hiseeve(){
+    $('.navbar-collapse').collapse('hide');
+
+  }
 }
